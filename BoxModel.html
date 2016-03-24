@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--Karishma Patel-->
+<!--Date : 01/02/2016-->
+<!--This program demonstrates use of Box Model-->
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Lesson 5 EX 5.1</title>
+		<link href="css/5_1_StyleSheet_Start.css" rel="stylesheet" type="text/css"> <!--Link to the CSS file-->
+        
+	</head>
+
+	<body>
+    	
+       <div id="container">
+			<header id="top_header">
+				<img src="images/HTML5_Logo_512.png" height="10%" width="12%" style="float:left; display: block; margin-top: 10px; margin-left: 10px" /> <!--Logo at the top-left corner of the webpage-->
+				<h1> Learning HTML5 & CSS3</h1>
+
+			</header>
+
+			<nav id="top_menu"> <!--Helps to set a navigation menu-->
+                <ul>
+                    <li>Home</li>
+                    <li>Markups</li>
+                    <li>Examples</li>	
+                </ul>
+			</nav>
+
+			<!--Articles, Sidebar and Footer are aligned -->
+			
+			<section id="main_section" > <!--Main section helps to arrange articles-->
+			
+				<article>
+                    <header>
+                    	<hgroup>
+                   			 <h1>Article 1: HTML5</h1>
+                   			 <h2>Subtitle: 1st Article! </h2>
+                    	</hgroup>
+                    </header>
+                    
+                    <p>This is the content of the 1st article between the header and footer of the article </p>
+                    
+                    <footer>
+                    	<p>Article 1 written by - abc</p>
+                    </footer>
+				</article>
+
+                <article>
+                    <header>
+                        <hgroup>
+                        	<h1>Article 2: CSS3</h1>
+                        	<h2>Subtitle: 2nd Article! </h2>
+                        </hgroup>
+                    </header>
+                    
+                    <p>This is the content of the 2nd article between the header and footer of the article</p>
+                    
+                    <footer>
+                    	<p>Article 2 written by - xyz</p>
+                    </footer>
+                </article>
+			</section>
+
+	
+            <aside id="side_news">
+            	
+            	<h2>Aside News</h2>
+            	<p>Aside content - W3C Releases new HTML5 elements</p>
+              
+            </aside>
+          
+
+            <footer id="the_footer">
+           		 Created by- Karishma
+            </footer>
+
+		
+       </div>
+	</body>
+    
+</html>
