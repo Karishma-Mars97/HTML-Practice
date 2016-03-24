@@ -1,0 +1,96 @@
+/*CSS file to create animation*/
+
+div /*Main division to create a common shape for all animations*/
+{
+	height:200px;
+	width:200px;
+	color:blue;
+	position:relative; /*Changes the position relatively*/
+	border-radius: 0px 100px 150px 100px; /*Creates rounded corners (top-left top-right bottom-right bottom-left)*/     
+}
+
+/*div1-div5 create animations with different positions, durations and timing functions*/
+
+#div1 
+{	
+	animation-timing-function: linear; /*Animation has the same speed from start to end*/
+    transform:rotate(45deg); /*Rotates the main div to 45 degree*/
+	-webkit-animation: myanimation1 2.5s infinite; /* Chrome, Safari, Opera */
+	animation: myanimation1 2.5s infinite; /*This tag uses myanimation1 for 2.5sec duration with infinite repeatitions*/	
+}
+
+#div2 
+{	
+	animation-timing-function: ease; /*Animation has a slow start, then fast, before it ends slowly*/
+	transform:rotate(45deg);
+	-webkit-animation: myanimation2 2s infinite;
+	animation: myanimation2 2s infinite; 
+}
+
+#div3 
+{	
+	animation-timing-function: ease-in; /*Animation has a slow start*/ 
+	transform:rotate(45deg);
+	-webkit-animation: myanimation4 2.8s infinite;
+	animation: myanimation4 2.8s infinite;
+}
+
+#div4 
+{	
+	animation-timing-function: ease-out; /*Animation has a slow end*/
+    transform:rotate(45deg);
+	-webkit-animation: myanimation5 2.2s infinite;
+	animation: myanimation5 2.2s infinite;
+}
+
+#div5 
+{
+	animation-timing-function: ease-in-out; /*Animation has both a slow start and a slow end*/
+	transform:rotate(45deg);
+	-webkit-animation: myanimation3 3s infinite;
+	animation: myanimation3 3s infinite;
+}
+
+/*Animation1*/
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myanimation1 
+{
+    from {background-color: pink; left:200px; top:0px;}
+    to {background-color: blue; left:200px; top:1000px;}
+}
+/* Standard syntax */
+@keyframes myanimation1 /*keyframes with name 'myanimation1' creates an animation*/
+{
+    from {background-color: pink; left:200px; top:0px;} /*from (200,0) to (200,1000)coordinate and from pink to blue color*/
+    to {background-color: blue; left:200px; top:1000px;}
+}
+/*It moves the division(each drop) vertically from top to bottom while color transition from pink to blue*/
+
+/*Animation2*/
+@keyframes myanimation2 
+{
+    from {background-color: pink; left:400px; top:10px;}
+    to {background-color: blue; left:400px; top:1000px;}
+}
+
+/*Animation3*/
+@keyframes myanimation3 
+{
+    from {background-color: pink; left:600px; top:0px;}
+    to {background-color: blue; left:600px; top:1000px;}
+}
+
+/*Animation4*/
+@keyframes myanimation4 
+{
+    from {background-color: pink; left:800px; top:10px;}
+    to {background-color: blue; left:800px; top:1000px;}
+}
+
+/*Animation5*/
+@keyframes myanimation5 
+{
+    from {background-color: pink; left:1000px; top:10px;}
+    to {background-color: blue; left:1000px; top:1000px;}
+}
+

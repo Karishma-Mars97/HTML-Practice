@@ -1,0 +1,154 @@
+<!doctype html>
+
+<!--Karishma Patel-->
+<!-- This code is to create SVG-->
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title> Assignment-3 </title>
+	</head>
+	
+	<body>
+		
+		<h2 font-style="Verdana"> UFO & ALIEN ABDUCTION !!! </h2>
+		
+		<svg width="1350" height="800" style="background:rgb(20,2,40)"> <!-- Defines SVG-Scalable Vector Graphics of specific size and color-->
+			
+			<defs> <!-- This is a linear gradient filter to fill gradient colors in the object-->
+				<linearGradient id="grad11" x1="0%" y1="0%" x2="0%" y2="100%">
+					<stop offset="0%" style="stop-color:rgb(20,2,40);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(64, 64, 191);stop-opacity:1" />
+				</linearGradient>
+			</defs> 
+			
+			<rect x="0" y="0" width="1350" height="650" style="fill:url(#grad11)"/> <!-- Creates a rectangle filled with gradient colors-->
+			
+			<defs> <!-- This is a linear gradient filter to fill gradient colors in the object-->
+				<linearGradient id="grad12" x1="0%" y1="0%" x2="0%" y2="100%">
+					<stop offset="0%" style="stop-color:rgb(26, 255, 103);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(0, 77, 26);stop-opacity:1" />
+				</linearGradient>
+			</defs>
+			
+			<rect x="0" y="650" width="1350" height="150" style="fill:url(#grad12)"/>
+	
+			<rect x="100" y="600" width="170" height="150" style="fill:#ffb3ff;stroke:pink;stroke-width:5" /> <!-- Outer light-pink rectangle of the house-->
+			
+			<polygon points="180,500 300,600 70,600" style="fill:#732673;stroke:purple;stroke-width:1" /> <!-- Upper triangle (purple) of the house-->
+			
+			<!-- Following 4 shapes are the inner shapes used in the house-->
+			
+			<rect x="200" y="650" width="60" height="90" style="fill:black;stroke:black;stroke-width:1" />
+			<rect x="110" y="620" width="70" height="60" style="fill:black;stroke:black;stroke-width:1" />
+			<line x1="145" y1="620" x2="145" y2="680" style="stroke:#732673;stroke-width:2" />
+			<line x1="110" y1="650" x2="180" y2="650" style="stroke:#732673;stroke-width:2" />
+			<circle cx="210" cy="690" r="6"  stroke-width="1" fill="#732673" />
+			
+			<defs> <!-- This is a linear gradient filter to fill gradient colors in the object-->
+				<linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+					<stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+					<stop offset="100%" style="stop-color:rgb(255, 255, 204);stop-opacity:1" />
+				</linearGradient>
+			</defs>
+			
+			<polygon points="750,150 950,650 550,650" style="fill:yellow;stroke:yellow;stroke-width:1; fill:url(#grad2)"> <!--The yellow light from the UFO-->
+			<animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+			</polygon>
+			
+			<!--Following are the shapes used to create an image of the UFO-->
+			
+			<line x1="750" y1="200" x2="660" y2="300" style="stroke:#ff6666;stroke-width:8" /> <!--The 3 lines at the bottom of the UFO-->
+			<line x1="750" y1="200" x2="750" y2="310" style="stroke:#ff6666;stroke-width:8" />
+			<line x1="750" y1="200" x2="840" y2="300" style="stroke:#ff6666;stroke-width:8" />
+			<circle cx="662" cy="300" r="14" fill="#ff9999" /> <!-- The 3 spheres at the bottom of the UFO-->
+			<circle cx="750" cy="320" r="14" fill="#ff9999" />
+			<circle cx="840" cy="300" r="14" fill="#ff9999" />
+			
+			<circle cx="750" cy="200" r="80" stroke="lightblue" stroke-width="3" fill="lightblue; fill-opacity:0.95" /> <!--The 3 spheres used in the top of the UFO-->
+			<circle cx="750" cy="200" r="65" stroke="black" stroke-width="3" fill="lightblue" />
+			<circle cx="750" cy="200" r="20" stroke="black" stroke-width="3" fill="#ff6666" />
+			
+			<ellipse cx="750" cy="245" rx="110" ry="40" style="fill:#4d79ff;stroke:black;stroke-width:2" /> <!-- Elliptical shape used in the UFO-->
+			<circle cx="670" cy="247" r="14" fill="white" />
+			<circle cx="720" cy="260" r="14" fill="white" />
+			<circle cx="770" cy="260" r="14" fill="white" />
+			<circle cx="820" cy="247" r="14" fill="white" />
+			
+			<!--Following are the shapes to create an alien-->
+			
+			<ellipse cx="740" cy="700" rx="250" ry="36" style="fill:blue">
+				<animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+			</ellipse> <!-- Animates the ellipse-->
+			
+			<ellipse cx="745" cy="675" rx="225" ry="36" style="fill:purple">
+				<animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+			</ellipse>
+			
+			<ellipse cx="750" cy="650" rx="200" ry="38" style="fill:#ffff33;stroke:black;stroke-width:2" > <!-- Ellipse used to show a shadow of light on the ground-->			
+				<animate attributeType="CSS" attributeName="opacity" from="1" to="0" dur="5s" repeatCount="indefinite" />
+			</ellipse>
+
+
+			<polygon points="750,520 775,645 725,645" style="fill:#e6005c;stroke:yellow;stroke-width:1;" />
+			<circle cx="750" cy="506" r="5" stroke="black" stroke-width="3" fill="#e6005c" />
+			<ellipse cx="750" cy="515" rx="10" ry="7" style="fill#66ff66;stroke:black;stroke-width:2" />
+			<line x1="750" y1="590" x2="750" y2="645" style="stroke:black;stroke-width:8" />
+			<ellipse cx="750" cy="590" rx="22" ry="34" style="fill:#66ff66;stroke:black;stroke-width:2" />
+			<circle cx="750" cy="540" r="20" stroke="black" stroke-width="3" fill="#e6005c" />
+			<circle cx="742" cy="540" r="3"  stroke-width="2" fill="black" />
+			<circle cx="758" cy="540" r="3"  stroke-width="2" fill="black" />
+			
+			<text x="770" y="510" fill="#e6005c" font-size="20"> Z </text> <!--Used to inser a text in SVG-->
+			<text x="784" y="502" fill="#e6005c" font-size="15"> Z </text>
+			<text x="794" y="493" fill="#e6005c" font-size="10"> Z </text>
+			
+			
+			<defs> <!-- Gaussian filter for blurring a shape-->
+				<filter id="f1" x="0" y="0">
+				 <feGaussianBlur in="SourceGraphic" stdDeviation="7" />
+				</filter>
+			</defs>
+			
+			<circle cx="1200" cy="120" r="70" stroke="black" stroke-width="3" fill="white" filter="url(#f1)" /> <!--This blurred shape is used to create the moon-->
+			
+		<!--Path is used to create a random shape like a cloud-->
+
+		<path id="cloud2" d="M128.42 62.694c.033-.6.05-1.205.05-1.813 0-17.596-14.293-31.862-31.924-31.862-5.585 0-10.835 1.43-15.402 3.947C76.712 14.07 59.724 0 39.446 0 17.942 0 .14 15.822-2.916 36.44c-1.09-.113-2.197-.17-3.317-.17-17.63 0-31.924 14.266-31.924 31.865C-38.157 85.733-23.864 100-6.233 100H128.47c10.32 0 18.687-8.35 18.687-18.653 0-10.302-8.366-18.653-18.687-18.653h-.05z" opacity=".3" fill="#FFF" fill-rule="evenodd"/>
+
+		<!--Following polygons are used to create stars-->
+		
+		<polygon points="250,90 220,120 270,100 220,100 260,120" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="4s" repeatCount="indefinite"  />
+		</polygon> <!--Animates the stars (blinking)-->
+		
+		<polygon points="340,160 310,190 360,175 313,165 350,195" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="2s" repeatCount="indefinite"  />
+		</polygon>
+		
+		<polygon points="650,90 620,120 670,100 620,100 660,120" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="4s" repeatCount="indefinite"  />
+		</polygon>
+		
+		<polygon points="950,50 920,80 970,63 920,60 960,79" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="3s" repeatCount="indefinite"  />
+		</polygon>
+		
+		<polygon points="1050,150 1020,183 1070,162 1021,158 1060,181" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="5s" repeatCount="indefinite"  />
+		</polygon>
+		
+		<polygon points="480,70 450,100 500,80 450,81 490,103" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="3s" repeatCount="indefinite"  />
+		</polygon>
+		
+		<polygon points="800,45 770,75 820,59 773,56 809,74" style="fill:rgb(204, 245, 255);fill-rule:nonzero;">
+			<animate id="a1" attributeName="fill" from="white" to="rgb(0, 85, 128)" dur="2s" repeatCount="indefinite"  />
+		</polygon>
+		
+		</svg>
+	<!--End of the Code !!!-->
+	</body>
+
+</html>

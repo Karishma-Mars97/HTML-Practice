@@ -1,0 +1,116 @@
+<!doctype html>
+
+<!--This is a code to generate a 'Form'-->
+
+<html>
+	<head>    <!-- Header of the webpage-->
+	<meta charset="utf-8">
+	<title> ACCOUNT PROFILE </title>
+	</head>
+
+	<body>    <!-- Body of the webpage-->
+		
+		<table align="center" border="1" style="background-color:lightgray; font-family:verdana">   <!-- Helps to show the form in the form of a table-->
+		<tr>     <th colspan="2"> Create Account Profile </th>    </tr> 
+		<form action="message.html">   <!--Tag to generate a form with specifying the action page-->
+			<tr>   <!-- Defines a table row-->
+				<td> First Name: </td>   <!-- Defines a table data-->
+				<td> 
+					<input type="text" name="firstname" style="background-color:lightpink" requied> <!-- Required field-->
+				</td>
+			</tr>
+			<tr>			
+				<td> Last Name: </td>
+				<td> 
+					<input type="text" name="lastname" style="background-color:lightpink" required> 
+				</td>
+			</tr>
+			<tr>
+				<td> E-Mail Id: </td>
+				<td> 
+					<input type="text" name="emailid" style="background-color:lightpink" required> 
+				</td>
+			</tr>
+			<tr>
+				<td> Password: </td>
+				<td> 
+					<input type="password" name="password" style="background-color:lightpink" required> 
+				</td>
+			</tr>
+			<tr>			
+				<td valign="top"> Gender: </td>
+				<td> <input type="radio" name="gender" value="male" checked> Male <br>  <!-- Creates a radio button-->
+			         <input type="radio" name="gender" value="female"> Female <br>
+			         <input type="radio" name="gender" value="other"> Other <br> 
+				</td>
+			</tr>
+			<tr>
+				<td> Age: </td>
+				<td>
+					<input type="number" name="quantity" min="18" max="29" style="background-color:lightpink"> <!-- Creates a number input-->
+				</td>
+			</tr>
+            <tr>			
+				<td valign="top"> Interests: </td>
+				<td>      
+				    <input type="checkbox" name="sport" value="Baseball">Baseball<br> <!-- Creates a checkbox-->
+					<input type="checkbox" name="sport" value="Basketball">Basketball<br>
+					<input type="checkbox" name="sport" value="Football">Football <br>	
+					<input type="checkbox" name="sport" value="Hockey">Hockey<br>	     
+					<input type="checkbox" name="sport" value="Soccer">Soccer<br>
+					<input type="checkbox" name="sport" value="Track">Track<br> 
+				</td>
+			</tr>
+			<tr>    
+				<td valign="top"> Favorite Team: </td>
+				<td>    
+					<select name="favoriteTeam" style="background-color:lightpink">  <!-- Creates a datalist -->
+						<option value="Bears">Chicago Bears</option>     
+						<option value="Bears">Chicago Bulls</option>   
+						<option value="Bears">Chicago Cubs</option>   
+						<option value="Bears">Chicago White Sox</option>     
+						<option value="Bears">Chicago Blackhawks</option>
+					</select> 
+				</td>   
+			</tr>   
+			<tr>
+				<td valign="top"> Address: </td>
+				<td> Street: <input type="text" name="street" style="background-color:lightpink">
+					<br> City: <input list="city" name="youraddress" style="background-color:lightpink">
+						<datalist id="city">
+						<option value="Toronto">
+						<option value="Ottawa">
+						<option value="Vancouver">
+						<option value="Calgary">
+						<option value="Kentville">
+					</datalist>
+					<br> Province: <input list="province" name="youraddress" style="background-color:lightpink">
+						<datalist id="province">
+						<option value="Ontario">
+						<option value="Quebec">
+						<option value="British Columbia">
+						<option value="Alberta">
+						<option value="Nova Scotia">
+					</datalist>
+				</td>
+			</tr>
+			<tr>    
+				<td>Comments:</td>    
+				<td>     
+				<textarea name="comments" cols="50" rows="10" value="Write a commenrt here." style="background-color:lightpink">
+				</textarea>   <!-- Creates a textarea-->
+				</td>   
+			</tr>  
+			<tr>
+				<td align="center" colspan="2">
+				<input type="submit" value="Submit">  <!-- Creates a button that can be used to return the input data to the collection page -->
+				</td>
+			</tr>		   
+			 
+			</form>
+		
+		</table>
+	
+	</body>	
+		
+</html>
