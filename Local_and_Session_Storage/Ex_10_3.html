@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--KARISHMA PATEL-->
+<!--Date: 12/02/2016-->
+<!--This program demonstrates use of Local and Session Web Storage-->
+<html>
+
+	<head>
+    <title>EX 10.3</title>
+    <meta charset="UTF-8">
+	<link href="css/Ex_10_3.css" rel="stylesheet" type="text/css"> <!--Link to the external CSS file-->
+	<script src="js/Ex_10_3_main.js"> </script> <!--Link to the external JavaScript file-->
+	</head>
+	
+	<body>
+	
+	<table> <!--Displays butoon in a single row-->
+	  <tr> <td> <div class="buttons" onclick="login()"> <!--Login button-->
+            	<h1>Login</h1>
+            </div> </td> 	
+
+	   <td > <div class="buttons" onclick="logout()">  <!--Logout button-->
+            	<h1>Logout</h1>
+	  </div> </td>
+	  
+	  <td> <div class="buttons" onclick="clearLocal()">  <!--Clear button-->
+            	<h1>Clear</h1>
+     </div> </td> </tr>
+	 
+    </table>
+		<form id="frm">  <!--Creates a form with ifd 'frm'-->
+		<fieldset style="height:110px; width:600px"> <!--Displays information is a group /set with border of size 110X600px-->
+		<legend>Personal Information:</legend> <!--Title of the fieldset-->
+	 	<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="text" id="txtFName" style="font-size:20px" required /> <!--Text input (Firstname) of size 20px -->
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="text" id="txtLName" style="font-size:20px" required /> <!--Text input (Lastname)of size 20px -->
+				</td>
+			</tr>
+			
+		</table>
+		</fieldset>
+		</form>
+		
+		<h3 id="mySession">Session Storage Not Set</h3> <!--Text showing at the bottom of the content-->
+	 	<h3 id="rememberMe"></h3> 
+			 
+  </body>
+</html>

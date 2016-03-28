@@ -1,0 +1,22 @@
+
+div{
+	text-align:center;
+	height:50px;
+	width:200px;
+	margin:3px;	 	
+	border-radius:20px;
+	font-family: Tahoma;
+	line-height:50px;
+	color:white;
+	box-shadow: 10px 10px 5px grey;		
+	text-shadow:3px 3px black;
+	margin-bottom:10px;	
+	}
+
+.buttons 
+{		
+	background: -webkit-linear-gradient(green, yellow);
+	background: linear-gradient(green, yellow);
+	}
+	
+	

@@ -1,0 +1,32 @@
+/*External CSS file to style a webpage*/
+	
+div /*This sections automatically stlyes all the divs used in the HTML file*/
+{
+	text-align:center;
+	height:50px;
+	width:200px;
+	margin:3px;	 	
+	border-radius:20px;
+	font-family: Tahoma;
+	line-height:50px;
+	color:white;
+	box-shadow: 10px 10px 5px grey; /*Creates shadow of the box/button with given properties*/
+	text-shadow:3px 3px black; /*Creates shadow of the text with given properties*/
+	margin-bottom:10px;
+	}
+
+.buttons  /*Class buttons to style buttons*/
+{		
+	background: -webkit-linear-gradient(purple, yellow);
+	background: linear-gradient(purple, yellow); /*Creates linear gradient effect on a button*/
+}
+
+#frm /*Id fomr to style a form*/
+{
+	font-family: Calibri;
+	font-size:20px;
+	color:purple;
+}
+	
+	
+	

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--KARISHMA PATEL-->
+<!--Date: 12/02/2016-->
+<!--This program demonstrates use of Local and Session Web Storage-->
+<html>
+
+	<head>
+    <title>EX 10.3</title>
+    <meta charset="UTF-8">
+	<link href="css/Ex_10_3_N.css" rel="stylesheet" type="text/css"> <!--Link to external CSS-->
+	 <script src="js/Ex_10_3.js"></script>
+	</head>
+	
+	<body> 
+    	<h1 id="mySession">Welcome to Mybook.com</h1>
+		<h3 id="rememberMe"></h3>
+		
+	 	<form action="page1.html" method="post">
+		 	  
+	 	<table>
+			<tr>
+				<td>
+					First Name:
+				</td>
+				<td>
+					<input type="text" id="txtFName" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Last Name:
+				</td>
+				<td>
+					<input type="text" id="txtLName" required />
+				</td>
+			</tr>
+			<!--<tr>
+				<td>
+					E-mail ID:
+				</td>
+				<td>
+					<input type="e-mail" id="txtEmail" required />
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:
+				</td>
+				<td>
+					<input type="password" id="password" required />
+				</td>
+			</tr>-->
+			<tr>
+			<td>
+			<input class="buttons" type="submit" onclick="login()" value="Login">
+			
+			<!--<div class="buttons" onclick="login()">
+            	<a href="page1.html"> <h1>Login</h1> </a>
+            </div>-->
+			</td>
+			</tr>
+		</table>
+		
+		</form>
+		
+	  	
+	  
+	  <div class="buttons" onclick="clearLocal()">
+            	<h1>Clear</h1>
+     </div>
+	 
+   
+	
+
+	 
+  </body>
+</html>
