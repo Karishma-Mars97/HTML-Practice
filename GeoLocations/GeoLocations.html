@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<!--KARISHMA PATEL-->
+<!--Date: 17/02/2016-->
+<!--This program demonstrates use of  Geolocation API-->
+
+<html>
+<head>
+		<meta charset="UTF-8">
+		<title>GeoLocations</title>
+		<!--<script src="http://maps.google.com/maps/api/js?sensor=false"></script> --> <!--External JavaScript for google map-->
+</head>
+<body>
+
+<input id="button" type= "image" onclick="getLocation()" src="images/img.png" style="height:100px" /> <!--Image as a button, it will call getLocation() function from JavaScript when clicked-->
+
+<p id="status">Click on the image</p> <!--Content of a HTML page with id 'status'-->
+
+<p id="mapholder"></p>
+
+
+<!--Internal JavaScript inside the body tag-->
+
+<script>
+
+var status = document.getElementById("status"); // Global variable to access element of the content with id "status"
+
+function getLocation()  // User-defined function to obtain user's current location
+{  
+	if (navigator.geolocation)  // If statement to check if the geolocation service is supported by the system or not
+	// If the system supporths the geolocation then it will go inside the execution statements
+	{     
+		status.innerHTML = "Geolocation is supported by this browser.";   // Changes the content of the webpage to show a message that Geolocation is supported
+		alert("Geolocation is Supported"); // Alert for the same message will pop up on the screen after clicking on the image button
+		navigator.geolocation.getCurrentPosition(showPosition); // Navigates to the user's current location and will call the another function 'ShowPosition' to show the location information
+	} 
+	else  // If the system does not support Geolocation
+	{      
+		status.innerHTML = "Geolocation is not supported by this browser.";   //Displays the message on the screen
+		alert("Geolocation is NOT supported");  // Aler window for the same message will pop up on the screen  
+	}  
+} 
+
+function showPosition(position) // User-defined function 
+{  
+	var d = new Date(position.timestamp);  // Local variable to store the time & date 
+	
+	status.innerHTML="Latitude: " + position.coords.latitude +
+	"<br>Longitude: " + position.coords.longitude  +   "<br>Accuracy: "
+	+ position.coords.accuracy   +   "<br>Altitude meters above mean sea level: " 
+	+ position.coords.altitude   +   "<br>altitudeAccuracy: " + position.coords.altitudeAccuracy   
+	+   "<br>Heading degrees clockwise from North: " + position.coords.heading   
+	+ "<br>Speed in Meters/sec : " + position.coords.speed  +   "<br>TimeStamp: " + d.toLocaleString(); 
+
+	var latlon = position.coords.latitude + "," + position.coords.longitude;
+
+    var img_url = "http://maps.googleapis.com/maps/api/staticmap?center="
+    +latlon+"&zoom=14&size=400x300&sensor=false";
+    document.getElementById("mapholder").innerHTML = "<img src='"+img_url+"'>";	
+	
+/*	var latitude = position.coords.latitude;
+    var longitude = position.coords.longitude;
+    var coords = new google.maps.LatLng(latitude, longitude);
+	
+	var mapOptions = {
+                zoom: 15,
+                center: coords,
+                mapTypeControl: true,
+                mapTypeId: google.maps.MapTypeId.ROADMAP};
+				
+	//create the map, and place it in the HTML map div
+            map = new google.maps.Map(document.getElementById("mapholder"), mapOptions);
+
+            //place the initial marker
+            var marker = new google.maps.Marker({position: coords, 
+												 map: map,
+												 title: "Current location!"});   */
+	
+}  // This function will display the information about Longitude, Latitude, MSL(Altitude), relative position to North, Speed and Time & Date of the user
+
+</script>
+
+</body>
+</html>
