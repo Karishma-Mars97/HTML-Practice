@@ -1,0 +1,15 @@
+/*CSS file to style the webpage*/
+
+
+#box /*Id box styles an element on the webpage*/
+{
+	position:absolute; /*Ablsolute position allows an element to move relative to the webpage*/
+	width:120px;
+	line-height:120px;
+	text-align: center;	
+	background:red;
+	border-radius:80px; /*Rounded border with radius of 80px makes it circle*/
+	white-space:nowrap; /*The text in the element will never wrap*/
+	padding:20px;
+	color:white;
+}
